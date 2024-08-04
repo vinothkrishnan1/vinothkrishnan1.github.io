@@ -1,0 +1,212 @@
+body {
+    background-color: beige;
+}
+
+#firstContainer {
+    height: 720px;
+    background-color: black;
+}
+
+#secondContainer {
+    height: 720px;
+    background-color: rgb(216 204 181);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#thirdContainer {
+    height: 900px;
+    background-color: #faf8f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#fourthContainer {
+    height: 720px;
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#fifthContainer {
+    height: 720px;
+    background-color: #e4e0de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#myWorkContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#myWorkCardContainer {
+    position: relative;
+}
+
+#cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomNavbar {
+    width: 220px;
+    height: 85px;
+    border-radius: 50px;
+    background-color: rgb(222 0 18);
+    display: flex;
+    position: fixed;
+    top: 570px;
+    left: 43%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.readyButton {
+    width: 498.11px;
+    height: 211.69px;
+    border-radius: 100px;
+    background-color: rgb(222 0 18);
+    display: flex;
+    top: 570px;
+    left: 43%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#yes {
+    color: #e64b59;
+    font-size: 160px;
+    font-weight: 700;
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.readyButton:hover {
+    background-color: rgb(11, 193, 72);
+}
+
+.readyButton:hover #yes {
+    color: white;
+    transform: translateX(-200px);
+}
+
+.readyButton:hover #circle {
+    color: white;
+    transform: translateX(270px);
+}
+
+
+#circle {
+    width: 174.34px;
+    height: 174.34px;
+    background-color: white;
+    border-radius: 500px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    color: rgb(222 0 18);
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.bottomNavbar:hover #menu {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.bottomNavbar:hover #pause {
+    transform: translateX(60px) rotateZ(90deg);
+}
+
+#pause {
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 500px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    color: rgb(222 0 18);
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+#menu {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#menu a {
+    margin-left: 60px;
+    color: white;
+    display: none;
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: transform 40ms linear;
+}
+
+#myWorkCard1 {
+    transition: transform 0.2s;
+}
+
+#myWorkCard2 {
+    top: 100px;
+    right: 40px;
+    position: absolute;
+    transition: transform 0.2s;
+}
+
+#myWorkCard1:hover {
+    transform: translateY(-25px);
+    cursor: pointer;
+}
+
+#myWorkCard2:hover {
+    transform: translateY(-25px);
+    cursor: pointer;
+}
+
+
+#message {
+    display: inline-block;
+    transition: transform 40ms linear;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.27);
+    text-align: center;
+}
+
+.highlight {
+    color: white;
+}
